@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <iterator>
 #include <vector>
@@ -15,7 +15,7 @@ int main() {
     std::ifstream file2("name2");
 
     if (!file1 || !file2) {
-        std::cerr << "Îøèáêà îòêðûòèÿ ôàéëà!" << std::endl;
+        std::cerr << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ñ Ñ„Ð°Ð¹Ð»Ð°!" << std::endl;
         return 1;
     }
 
@@ -31,7 +31,7 @@ int main() {
 
     std::ofstream outfile("output.txt");
     if (!outfile) {
-        std::cerr << "Îøèáêà îòêðûòèÿ âûõîäíîãî ôàéëà!" << std::endl;
+        std::cerr << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ñ Ð²Ñ‹Ñ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð°!" << std::endl;
         return 1;
     }
 
