@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 #include <map>
 #include <algorithm>
@@ -18,7 +18,7 @@ void CountAndPrint(const std::vector<int>& V)
 int main() 
 {
     std::vector<int> V1 = { 1, 2, 2, 3, 1, 4, 2 };
-    std::cout << "Ðåçóëüòàò äëÿ int:\n";
+    std::cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚:\n";
     CountAndPrint(V1);
 
     return 0;
