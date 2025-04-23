@@ -4,16 +4,7 @@
 #include <algorithm>
 #include <string>
 
-void CountAndPrint(const std::vector<int>& V) 
-{
-    std::map<int, int> M;
-    std::for_each(V.begin(), V.end(), [&M](int val) {
-        M[val]++;
-        });
-    std::for_each(M.begin(), M.end(), [](const std::pair<const int, int>& p) {
-        std::cout << p.first << " " << p.second << std::endl;
-        });
-}
+void CountAndPrint(const std::vector<int>& V);
 
 int main() 
 {
@@ -22,4 +13,15 @@ int main()
     CountAndPrint(V1);
 
     return 0;
+}
+
+void CountAndPrint(const std::vector<int>& V)
+{
+    std::map<int, int> M;
+    std::for_each(V.begin(), V.end(), [&M](int val) {
+        M[val]++;
+        });
+    std::for_each(M.begin(), M.end(), [](const std::pair<const int, int>& p) {
+        std::cout << p.first << " " << p.second << std::endl;
+        });
 }
